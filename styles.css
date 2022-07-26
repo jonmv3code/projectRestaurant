@@ -1,3 +1,49 @@
-.jumbotron {
-    margin-bottom: 0;
+body {
+    overflow-x: hidden;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+#bg-picture {
+    background-image: url(img/pexels-pixabay-260922.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: bottom;
+    width: 100vw;
+    height: 100vh;
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 1rem;
+    z-index: 2000
+}
+
+.title {
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.title-sm-bottom {
+    margin-top: -.5rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 20;
+    font-size: 1.5rem;
+}
+
+.nav-text {
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+
+.nav-link.active {
+    color: aqua;
+}
+
+.about {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 350;
 }
