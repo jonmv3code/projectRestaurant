@@ -4,20 +4,26 @@
   "description": "NuCamp Portfolio Project",
   "main": "index.js",
   "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonmv3code/projectRestaurant.git"
   },
-  "author": "Jonmikal",
+  "author": "Jonmikal/BritneyF",
   "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
   "bugs": {
     "url": "https://github.com/jonmv3code/projectRestaurant/issues"
   },
   "homepage": "https://github.com/jonmv3code/projectRestaurant#readme",
   "dependencies": {
     "bootstrap": "^5.2.0",
+    "bootstrap-social": "^5.1.1",
     "fontawesome": "^5.6.3"
   }
 }
