@@ -48,9 +48,25 @@ body {
     font-weight: 350;
 }
 
-.tabIntro {
-    color:white;
-    padding: 100px;
-    position: center;
-    margin-top: 
+.row-content {
+    padding: 50px 0;
+    border: 1px ridge;
+    min-height: 200px; }
+
+.nav-obj {
+        font-size: 3rem;
+    }
+ small {
+        font-size: 15px;
+    }
+
+h4 {
+    color: black;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
 }
