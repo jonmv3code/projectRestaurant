@@ -1,3 +1,4 @@
+/* Font scale 4.209 / 3.157 / 2.369 / 1.777 / 1.333 / 1 / .75 / .563 / .422  */
 html {
     scroll-behavior: smooth;
 }
@@ -12,8 +13,13 @@ body {
     background-position: center;
     position: bottom;
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
 }
+
+.bg-dark {
+    background-color: rgba(46, 0, 0, 0.8) !important; 
+}
+
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
@@ -26,7 +32,7 @@ body {
     text-transform: uppercase;
     color: aliceblue;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 4.209rem;
 }
 
 .title-sm-bottom {
@@ -34,11 +40,11 @@ body {
     text-transform: uppercase;
     color: aliceblue;
     font-weight: 20;
-    font-size: 1.5rem;
+    font-size: 2.369rem;
 }
 
 .nav-text {
-    font-size: 1.5rem;
+    font-size: 1.333rem;
     font-weight: 350;
 }
 
@@ -46,10 +52,29 @@ body {
     color: aqua;
 }
 
-.about {
-    font-size: 4rem;
+.specials {
+    font-size: 4.209rem;
     text-transform: uppercase;
-    font-weight: 350;
+    font-weight: 400;
+}
+
+.specials-caption {
+    font-weight: 500;
+    font-size: 1.777rem;
+}
+
+.specials-description {
+    font-weight: 400;
+    font-size: rem;
+}
+
+.carousel-caption {
+    background-color: rgba(46, 0, 0, 0.7); 
+}
+.about {
+    font-size: 4.209rem;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .row-content {
@@ -74,3 +99,9 @@ h4 {
     height: 30vh;
     object-fit: cover;
 }
+
+.carousel-item img {
+    height: 70vh;
+    width: 100%;
+}
+
