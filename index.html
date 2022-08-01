@@ -17,6 +17,19 @@
 
     <title>The Restaurant</title>
 
+    <script>
+      
+      window.addEventListener('scroll', function() {
+    if(this.window.scrollY > 1190) {
+        home.classList.remove('active');
+        about.classList.add('active');
+    } else {
+        about.classList.remove('active');
+        home.classList.add('active');
+    }
+})
+    </script>
+
 
 </head>
 
@@ -42,9 +55,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav nav-text">
-                    <a class="nav-item nav-link active" href="#" id="active">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active home" href="#" id="active">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="menu.html#menu">Menu</a>
-                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link about" href="#about">About</a>
                     <a class="nav-item nav-link" href="#">Gallery</a>
                 </div>
             </div>
@@ -66,21 +79,21 @@
                     <div class="carousel-item active">
                         <img src="img/becBurger.jpg" class="d-block" alt="Burger lunch special">
                         <div class="carousel-caption d-none d-block">
-                        <h5 class="specials-caption">Lunch Special</h5>
+                        <h5 class="specials-caption"><a class="specials-link" href="menu.html#menu">Lunch Special</a></h5>
                         <p class="specials-description">Try our delicious Burgers for half off from 12pm - 1pm</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/seafoodp.jpg" class="d-block" alt="Sea Food Sunday Special">
                         <div class="carousel-caption d-none d-block">
-                        <h5 class="specials-caption">Seafood Sunday Special</h5>
+                        <h5 class="specials-caption"><a class="specials-link" href="menu.html#menu">Seafood Sunday Special</a></h5>
                         <p class="specials-description">Join us on Sundays for our seafood specials</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/liquor2.jpg" class="d-block" alt="Drink Special">
                         <div class="carousel-caption d-none d-block">
-                        <h5 class="specials-caption">Happy Hour from 12pm - 2pm</h5>
+                        <h5 class="specials-caption"><a class="specials-link" href="menu.html#menu"> Happy Hour from 12pm - 2pm</a></h5>
                         <p class="specials-description">Have a drink with us for half the price </p>
                         </div>
                     </div>
@@ -96,13 +109,18 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center mt-2">
+            <a href="menu.html#menu"><button class="btn btn-custom text-center">Our Menu</button></a>
+          </div>
+        </div>
     </div>
     <!-- Specials carousel end-->
     <!-- About us start -->
     <div class="container">
         <div class="row">
-            <div class="col text-center mt-5 pt-5">
-                <h1 class="about pb-5" id="about">About us</h1>
+            <div class="col text-center mt-5 pt-5" id="about">
+                <h1 class="aboutus pb-5">About us</h1>
                 <p class="col-sm-6 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis modi doloribus pariatur sit
                     voluptate fugit optio nisi a. Quis laudantium delectus doloremque repellat rerum, cum iusto
                     temporibus veniam repellendus, tempore eveniet molestias fugit odio pariatur vitae eos! Corrupti
@@ -110,19 +128,12 @@
                     maiores voluptate, praesentium officiis blanditiis, commodi earum! Nihil illo dolore hic dicta
                     exercitationem magni nemo aspernatur provident asperiores. Quibusdam accusantium vero neque. Magni
                     numquam vitae maxime ipsam saepe amet natus accusantium recusandae animi placeat iusto earum quaerat
-                    fugit laboriosam illum ab dignissimos, eligendi quam necessitatibus nobis quibusdam. Voluptatum.
+                    fugit laboriosam illum ab dignissimos, eligendi quam necessitatibus nobis.
                 </p>
             </div>
         </div>
     </div>
     <!-- About us end -->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
-    </div>
 
     <footer class="text-center text-lg-start bg-light text-muted">
 

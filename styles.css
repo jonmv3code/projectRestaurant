@@ -66,12 +66,38 @@ body {
 .specials-description {
     font-weight: 400;
     font-size: rem;
+    transition: 1ms ease-in-out;
+}
+
+.specials-link {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.specials-link:hover {
+    text-decoration: none;
+    font-size: 1.9rem;
+    transform: translateY(100px);
+    color: rgba(255, 172, 0, 1);
+}
+
+.btn-custom {
+    font-size: 1.777rem;
+    color: white;
+    background-color: rgba(46, 0, 0, 0.8) ;
+}
+.btn-custom:hover {
+    font-size: rem;
+    color: rgba(255, 172, 0, 1);
+    background-color: rgba(46, 0, 0, 0.8);
+    
 }
 
 .carousel-caption {
     background-color: rgba(46, 0, 0, 0.7); 
 }
-.about {
+.aboutus {
     font-size: 4.209rem;
     text-transform: uppercase;
     font-weight: 400;
@@ -101,7 +127,7 @@ h4 {
 }
 
 .carousel-item img {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
 }
 
