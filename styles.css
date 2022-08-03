@@ -9,7 +9,7 @@ html {
 body {
     overflow-x: hidden;
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600 !important;
+    font-weight: 600;
 }
 
 #bg-picture {
@@ -73,11 +73,11 @@ body {
 
 .specials-caption {
     font-weight: inherit;
-    font-size: 1.777rem;
+    font-size: 3.157rem;
 }
 
 .specials-description {
-    font-size: 1rem;
+    font-size: 1.777rem;
     transition: 1ms ease-in-out;
 }
 
@@ -89,7 +89,7 @@ body {
 
 .specials-link:hover {
     text-decoration: none;
-    font-size: 1.9rem;
+    font-size: 3.5rem;
     transform: translateY(100px);
     color: rgba(255, 172, 0, 1);
 }
@@ -106,9 +106,6 @@ body {
     
 }
 
-.carousel-caption {
-    background-color: var(--main-color);
-}
 .aboutus {
     font-size: 4.209rem;
     text-transform: uppercase;
