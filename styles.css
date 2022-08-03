@@ -10,8 +10,17 @@ body {
 #bg-picture {
     background-image: url(img/pexels-pixabay-260922.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     position: bottom;
+    width: 100vw;
+    height: 75vh;
+}
+#bg-picture-menu {
+    background-image: url(img/bg-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 75vh;
 }
@@ -129,5 +138,7 @@ h4 {
 .carousel-item img {
     height: 60vh;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
