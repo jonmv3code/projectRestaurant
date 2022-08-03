@@ -1,10 +1,15 @@
 /* Font scale 4.209 / 3.157 / 2.369 / 1.777 / 1.333 / 1 / .75 / .563 / .422  */
+:root {
+    --main-color: rgba(46, 0, 0, 0.8);
+}
+
 html {
     scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600 !important;
 }
 
 #bg-picture {
@@ -26,7 +31,7 @@ body {
 }
 
 .bg-dark {
-    background-color: rgba(46, 0, 0, 0.8) !important; 
+    background-color: var(--main-color) !important; 
 }
 
 .navbar-nav.navbar-center {
@@ -40,7 +45,7 @@ body {
 .title {
     text-transform: uppercase;
     color: aliceblue;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 4.209rem;
 }
 
@@ -48,13 +53,12 @@ body {
     margin-top: -.5rem;
     text-transform: uppercase;
     color: aliceblue;
-    font-weight: 20;
     font-size: 2.369rem;
 }
 
 .nav-text {
     font-size: 1.333rem;
-    font-weight: 350;
+    font-weight: 600;
 }
 
 .nav-link.active {
@@ -64,17 +68,16 @@ body {
 .specials {
     font-size: 4.209rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .specials-caption {
-    font-weight: 500;
+    font-weight: inherit;
     font-size: 1.777rem;
 }
 
 .specials-description {
-    font-weight: 400;
-    font-size: rem;
+    font-size: 1rem;
     transition: 1ms ease-in-out;
 }
 
@@ -93,23 +96,23 @@ body {
 
 .btn-custom {
     font-size: 1.777rem;
+    font-weight: inherit;
     color: white;
-    background-color: rgba(46, 0, 0, 0.8) ;
+    background-color: var(--main-color);
 }
 .btn-custom:hover {
-    font-size: rem;
     color: rgba(255, 172, 0, 1);
-    background-color: rgba(46, 0, 0, 0.8);
+    background-color: var(--main-color);
     
 }
 
 .carousel-caption {
-    background-color: rgba(46, 0, 0, 0.7); 
+    background-color: var(--main-color);
 }
 .aboutus {
     font-size: 4.209rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .row-content {
@@ -121,10 +124,12 @@ body {
         font-size: 3rem;
     }
  small {
+        font-weight: inherit;
         font-size: 15px;
     }
 
 h4 {
+    font-weight: inherit;
     color: black;
     text-align: center;
 }
@@ -133,6 +138,15 @@ h4 {
     width: 100%;
     height: 30vh;
     object-fit: cover;
+}
+
+.card-title {
+    font-weight: 700;
+
+}
+
+.menu-text {
+    color: var(--main-color);
 }
 
 .carousel-item img {
