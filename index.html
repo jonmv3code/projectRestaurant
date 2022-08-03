@@ -43,7 +43,7 @@
                     <h1 class="title mt-5">The Restaurant</h1>
                     <h5 class="title-sm-bottom">Eat. drink. relax.</h5>
                    </div>
-             </div>
+               </div>
          </div>
     </header>
     <!-- Header end -->
@@ -59,12 +59,72 @@
                     <a class="nav-item nav-link active home" href="#" id="active">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="menu.html#menu">Menu</a>
                     <a class="nav-item nav-link about" href="#about">About</a>
-                    <a class="nav-item nav-link" href="#">Gallery</a>
+                    <a class="nav-item nav-link" data-toggle="modal" data-target="#reserveModal" href="#reserveModal">Reservations</a>
                 </div>
             </div>
         </nav>
     </div>
     <!-- Navbar end -->
+
+    <!--Modal Start-->
+    <div id="reserveModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary text-white">
+              <h3 class="modal-title">Reserve a Table</h3>
+              <button type="button" class="close btn-danger btn-lg" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                  <div class="form-group row">
+                      <label class="col col-form-label" for="guestName">Name for Reservation</label>
+                      <div class="col">
+                          <input type="text" id="guestName" name="guestName" class="form-control">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col col-form-label" for="numGuests">Number of Guests</label>
+                    <div class="col-sm-6">
+                      <select name="numGuests" id="numGuests" class="form-control">
+                        <option selected>Select...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value=">6">7+</option>
+                      </select>
+                    </div>
+                  </div>
+  
+          
+                  <div class="form-group row">
+                    <label class="col-sm col-form-label" for="date">Date</label>
+                    <div class="col">
+                      <input class="form-control" type="date" id="date" name="date" placeholder="date">
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="form-group row">
+                    <div class="col">
+                      <button data-dismiss="modal" class="btn btn-primary btn-secondary">Cancel</button>
+                      <button class="btn btn-success" type="submit">Reserve</button>
+                    </div>
+                  </div>
+  
+                
+              </form>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal End-->
+
     <!-- Specials carousel start-->
     <div class="container">
         <div class="row">
